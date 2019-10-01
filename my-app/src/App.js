@@ -4,6 +4,7 @@ import axios from 'axios';
 import UserCard from './components/UserCard';
 import FollowersCard from './components/FollowersCard';
 
+
 class App extends React.Component {
   state = {
     user: [],
@@ -29,12 +30,13 @@ class App extends React.Component {
 render() {
   return (
     <div className="App">
-     <h1>GitHub Users</h1>
+     <h1>Github</h1>
      <div className="user-card">
      <UserCard key={this.state.user.id} avatar={this.state.user.avatar_url} login={this.state.user.login} location={this.state.user.location} bio={this.state.user.bio} />
      </div>
 
      <div className="follower-card">
+       <h2>My Followers</h2>
      {this.state.followers.map(item => (
            <FollowersCard key={item.id} item={item}/>
      ))}

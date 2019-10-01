@@ -1,17 +1,15 @@
 .App {
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .user-card {
-  border: 1px solid black;
   margin: 10px;
   padding: 10px;
-  box-sizing: border-box;
+  border-bottom: 5px solid black;
 }
 
 .follower-card {
-  border: 1px solid black;
   margin: 10px;
   padding: 10px;
-  box-sizing: border-box;
 }
