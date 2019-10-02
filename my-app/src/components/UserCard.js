@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const StyledImg = styled.img`
     height: 200px;
+    border-radius: 100px;
 `;
 
 const UserCard = props => {
